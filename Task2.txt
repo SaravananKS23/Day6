@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert('I’m JavaScript!');
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+--------------------------
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html>
+alert("I'm invoked!");
+--------------------------
+alert("I'm JavaScript!"); //String was displayed
+alert('Hello') // this line is not having semicolon //String was displayed
+alert(`Wor
+ ld`) //Due to enter it was diplayed same as the input
+alert(3 +
+1
++ 2); // this is multiple line code and its working //reoturn output 6
+--------------------------
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+" "+lname;
+alert( admin ); // "Guvi geek"
+--------------------------
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek";
+let name = fname+" "+lname;alert( `hello ${name}` );--------------------------
+--------------------------
+let a = window.prompt("First number?");
+let b = window.prompt("Second number?");
+alert(parseInt(a) + parseInt(b));--------------------------
+--------------------------
+If you run the below scritpt you will get “Code is Blasted”
+
+Explain Why the Code is blasted and how to diffuse it and get “Diffused”.
+
+var a = "2" > "12";//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+Answer:
+The given code is blasted because while comparing string it will take first character in alphabetical way so 2 is greater than 1.
+To return the out as "Diffused" we need to change the variable value as a= "2" < "12". 
+--------------------------
+let a = (parseInt(prompt("Enter a number?")))>=0;//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+--------------------------
+let value = parseInt(prompt('How many runs you scored in this ball'));
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+--------------------------
+let login = 'Employee';
+let message = (login == 'Employee') ? 'Welcome Buddy':
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';console.log(message);
+--------------------------
+let message;
+if (null || 2 || undefined)
+{
+console.log("welcome boss");
+}
+else
+{
+console.log("Go away");
+}
+--------------------------
+let message;
+let lock = 2 >2 ;
+//Dont change any code below this
+if (null || lock || undefined )
+{
+    console.log("Go away");
+}
+else
+{
+    console.log("welcome");
+}
+--------------------------
+let message;
+let lock = 2>2;//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+--------------------------
+//You can change only 2 characters
+let i = 3;while (i) {
+    console.log( i-- );
+}
+--------------------------
+for (let num=1;num<=10;num++)
+{
+    console.log(num);
+}
+--------------------------
+for (let num = 2; num <= 20; num += 2) {
+    console.log(num)
+}
+--------------------------
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+    console.log(`Wrapped ${gifts[i]} and added a bow!`);
+}
+--------------------------
+let countdown = 0;
+while (countdown===0||countdown>0) {
+    if(countdown !== 0)
+    {
+     console.log("bomb triggered");
+    }
+else
+    {
+        console.log("bomb disarm");
+    }
+    countdown--;
+    break;
+}
+--------------------------
+var lemein = "0";
+var lemeout = 0;
+var msg = "";
+if (lemein) {
+ msg += "hi";
+ }
+ if (lemeout) {
+ msg += 'Hello';
+}
+console.log(msg);
+the msg variable is string so it will accept the string values so lemein value returned.
